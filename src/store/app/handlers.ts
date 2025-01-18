@@ -1,4 +1,4 @@
-import { PublicUser } from '../../common/types/public.user';
+import { PublicUser } from '../../common/types/user/public.user';
 import { NotificationMessages } from '../../common/enums/notification.messages';
 import { AppState } from './types/app.state';
 

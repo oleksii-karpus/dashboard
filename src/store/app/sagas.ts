@@ -1,7 +1,7 @@
 import { all, call, delay, put, takeLatest } from 'redux-saga/effects';
 import { Action } from 'redux-actions';
 import { AppResponse } from '../../common/types/app.response';
-import { PublicUser } from '../../common/types/public.user';
+import { PublicUser } from '../../common/types/user/public.user';
 import { authService } from '../../services/auth';
 import {
     appInitRoutine,

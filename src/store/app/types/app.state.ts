@@ -1,4 +1,4 @@
-import { PublicUser } from '../../../common/types/public.user';
+import { PublicUser } from '../../../common/types/user/public.user';
 import { Notifications } from '../../../common/types/notifications';
 
 export interface AppState {
@@ -6,4 +6,5 @@ export interface AppState {
     user: PublicUser | null;
     notification: Notifications;
     errors?: Record<string, string[]>;
+    account?: PublicUser | undefined;
 }

@@ -4,5 +4,6 @@ export enum NotificationMessages {
     loginSuccess = 'Login successful!',
     loginFailure = 'Login failed!',
     logoutSuccess = 'Logout successful!',
-    logoutFailure = 'Logout failed!'
+    logoutFailure = 'Logout failed!',
+    updateAccountSuccess = 'Account information updated successfully!'
 }

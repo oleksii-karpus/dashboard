@@ -6,7 +6,7 @@ import {
     notificationSuccess,
     triggerLoader
 } from '../../../store/app/handlers';
-import { PublicUser } from '../../../common/types/public.user';
+import { PublicUser } from '../../../common/types/user/public.user';
 import { NotificationMessages } from '../../../common/enums/notification.messages';
 
 describe('triggerLoader', () => {

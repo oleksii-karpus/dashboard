@@ -1,5 +1,5 @@
 import { createRoutine } from 'redux-saga-routines';
-import { PublicUser } from '../../common/types/public.user';
+import { PublicUser } from '../../common/types/user/public.user';
 
 export const triggerLoaderRoutine = createRoutine('app/trigger-loader');
 export const appInitRoutine = createRoutine('app/init');

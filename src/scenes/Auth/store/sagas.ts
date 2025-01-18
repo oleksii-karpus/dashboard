@@ -5,7 +5,7 @@ import { authService } from '../../../services/auth';
 import { notificationFlowRoutine } from '../../../store/app/routines';
 import { NotificationMessages } from '../../../common/enums/notification.messages';
 import { ApplicationException } from '../../../exception/application.exception';
-import { PublicUser } from '../../../common/types/public.user';
+import { PublicUser } from '../../../common/types/user/public.user';
 import { AppResponse } from '../../../common/types/app.response';
 import { LoginRoutine, LogoutRoutine } from './routines';
 

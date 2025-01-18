@@ -13,6 +13,9 @@ describe('getAppState', () => {
                     open: false
                 },
                 errors: {}
+            },
+            dashboard: {
+                account: null
             }
         };
 
@@ -38,6 +41,9 @@ describe('getAppState', () => {
                     open: true
                 },
                 errors: {}
+            },
+            dashboard: {
+                account: null
             }
         };
 
