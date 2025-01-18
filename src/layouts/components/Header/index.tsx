@@ -2,8 +2,9 @@ import { AppBar, Box, Toolbar } from '@mui/material';
 import { useLocation } from 'react-router-dom';
 import { Routes } from '../../../common/enums/routes';
 import { NavItem } from '../../types/nav.items';
-import { useUser } from '../../../hooks/use.user';
+import { useAuth } from '../../../hooks/use.auth';
 import { UserButton } from '../UserButton';
+import NotificationSnackbar from '../../../components/NotificationSnackbar';
 import { LogoWrapper, NavItemLinkStyled, NavStyled } from './index.styles';
 
 type Props = {
@@ -11,7 +12,7 @@ type Props = {
 };
 
 export const Header = ({ navItems }: Props) => {
-    const { user, onLogout } = useUser();
+    const { user, onLogout } = useAuth();
     const location = useLocation();
     const isActive = (route: string): boolean => {
         const pathSegments = location.pathname.split('/').filter(Boolean);
@@ -19,6 +20,7 @@ export const Header = ({ navItems }: Props) => {
     };
     return (
         <Box>
+            <NotificationSnackbar />
             <AppBar position="static">
                 <Toolbar>
                     <LogoWrapper>

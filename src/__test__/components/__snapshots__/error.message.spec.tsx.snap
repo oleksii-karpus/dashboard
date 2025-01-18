@@ -1,0 +1,24 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ErrorMessage matches snapshot when an empty array is provided 1`] = `<DocumentFragment />`;
+
+exports[`ErrorMessage matches snapshot when errors are provided 1`] = `
+<DocumentFragment>
+  <div
+    class="MuiBox-root css-vo4hhh"
+  >
+    <div
+      class="MuiBox-root css-4zc23b"
+    >
+      Error 1
+    </div>
+    <div
+      class="MuiBox-root css-4zc23b"
+    >
+      Error 2
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`ErrorMessage matches snapshot when no errors are provided 1`] = `<DocumentFragment />`;
